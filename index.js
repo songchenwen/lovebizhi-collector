@@ -64,6 +64,12 @@ var getPic = function(picId, callback){
 			console.log('pic ' + picId + ' download error: ' + error);
 			callback(error);
 		}else{
+			if(res.headers && res.headers['content-length']){
+				if(res.headers['content-length'] > body.length){
+					callback("Incompleted downloading " + picId);
+					return;
+				}
+			}
 			fs.writeFile(fileName, body, 'binary', function(error){
 				if(error){
 					console.log('pic ' + picId + ' save error: ' + error);
