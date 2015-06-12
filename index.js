@@ -53,7 +53,7 @@ var getPic = function(picId, callback){
 		return;
 	}
 	var url = api.fileUrl(picId);
-	request({url: url, encoding: null}, function(error, res, body){
+	request({url: url, encoding: null, timeout:15000}, function(error, res, body){
 		if(finishedPicCount >= maxFileCount - 1){
 			finishedPicCount++;
 			callback();
