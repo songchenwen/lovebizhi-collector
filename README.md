@@ -1,6 +1,6 @@
 # Lovebizhi Collector
 
-This is a nodejs script that uses [lovebizhi](https://www.lovebizhi.com) apis to collect wallpapers, and auto change wallpapers for OS X. [Chinese Post](https://songchenwen.github.io/tech/2015/06/07/lovebizhi-collector/)
+This is a nodejs script that uses [lovebizhi](https://www.lovebizhi.com) apis to collect wallpapers, and auto change wallpapers for OS X. [Chinese Post](http://songchenwen.com/tech/2015/06/07/lovebizhi-collector/)
 
 ## Usage
 
